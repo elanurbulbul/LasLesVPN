@@ -11,7 +11,13 @@
 }
 .hero-bg-section{
     h1{
-        max-width:520px;
+        max-width:480px;
         font-weight: 500;
+    }
+}
+.second-bg-section{
+    li{
+        display: flex;
+        align-items: center;
     }
 }
