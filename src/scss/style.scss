@@ -33,6 +33,9 @@ $container-max-widths: (
 // Utilities
 @import "../../node_modules/bootstrap/scss/utilities/api";
 
+section{
+    margin: 90px 0;
+}
 .rubik{
     font-family: "Rubik", sans-serif;
     font-optical-sizing: auto;
