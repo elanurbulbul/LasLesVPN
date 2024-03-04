@@ -1,4 +1,37 @@
+@import "../../node_modules/bootstrap/scss/functions";
+
+// Customize some defaults
+
+$font-family-sans-serif: 'Satoshi-Variable', 'Satoshi-VariableItalic', sans-serif;
+$body-color: #212121;
+$body-bg: #fff;
+$border-radius: .4rem;
+$success: #28a745;
+$primary: #4F5665;
+$shadow-sm: 0px 0 1px rgba(0, 0, 0, 0.05);
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1320px,
+) !default;
+
+// Import all of Bootstrap's CSS
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+// Required
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/variables-dark";
+@import "../../node_modules/bootstrap/scss/maps";
+@import "../../node_modules/bootstrap/scss/mixins";
+@import "../../node_modules/bootstrap/scss/utilities";
+@import "../../node_modules/bootstrap/scss/root";
+@import "../../node_modules/bootstrap/scss/reboot";
+
+// Utilities
+@import "../../node_modules/bootstrap/scss/utilities/api";
 
 .rubik{
     font-family: "Rubik", sans-serif;
@@ -15,9 +48,25 @@
         font-weight: 500;
     }
 }
-.second-bg-section{
+.third-bg-section{
     li{
         display: flex;
         align-items: center;
+    }
+    h4{
+        max-width: 291px;
+    }
+    p{
+        max-width: 430px;
+    }
+}
+.cards-bg-section{
+    ul{
+        font-size: 14px;
+    }
+   
+    .pricing-card{
+        padding: 50px 72px;
+        width: 100%;
     }
 }
