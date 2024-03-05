@@ -9,6 +9,7 @@ export default defineConfig({
     hot: true,
   },
   build: {
+    outDir: "../../wwwroot/templates/template-1/",
     rollupOptions: {
       input: {
         index: path.resolve(__dirname, "src/index.html"),
