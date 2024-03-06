@@ -6,6 +6,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Bootstrap w/ Vite</title>
   <script type="module" src="./js/main.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script type="module">
+    import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
+    const swiper = new Swiper('.swiper', {
+      // Optional parameters
+      direction: 'horizontal',
+      loop: true,
+
+      // If we need pagination
+      pagination: {
+        el: '.swiper-pagination',
+      },
+
+      // Navigation arrows
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+
+      // And if we need scrollbar
+      scrollbar: {
+        el: '.swiper-scrollbar',
+      },
+    });
+  </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
     integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -313,6 +338,38 @@
         </div>
       </div>
     </section>
+    <section class="swiper-section">
+      <div class="container d-flex flex-column justify-content-center align-items-center ">
+        <div class="row">
+          <div class="col col-12 mb-5">
+            <h1 class="fw-bold lh-base text-center mb-4">
+              Trusted by Thousands of
+              <span class="d-block">Happy Customer</span>
+            </h1>
+            <p class="lh-base text-center text-primary ">These are the stories of our customers who have joined us with great
+              <span class="d-block "> pleasure when using this crazy feature.</span>
+            </p>
+          </div>
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">Slide 1</div>
+              <div class="swiper-slide">Slide 2</div>
+              <div class="swiper-slide">Slide 3</div>
+              <div class="swiper-slide">Slide 4</div>          
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination d-flex align-content-start"></div>
+    
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev d-flex align-content-end "></div>
+            <div class="swiper-button-next d-flex align-content-end"></div>
+          </div>
+        </div>
+      
+    </section>
+
   </main>
 </body>
 
