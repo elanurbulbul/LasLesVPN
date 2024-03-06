@@ -76,7 +76,20 @@ section{
 
 .swiper-section{
     .swiper {
-        width: 600px;
+        margin-bottom: 12px;
+        width: 1000px;
         height: 300px;
-      }
+        .swiper-slide {
+            width: 100%;
+            text-align: start;
+            font-size: 14px;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .user-information{
+                font-size: 10px;
+            }
+        }
+    }
 }
