@@ -17,6 +17,13 @@ $container-max-widths: (
   xl: 1140px,
   xxl: 1320px,
 ) !default;
+$zindex-levels: (
+  n1: -1,
+  0: 0,
+  1: 1,
+  2: 2,
+  3: 3
+) !default;
 
 // Import all of Bootstrap's CSS
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
@@ -77,7 +84,6 @@ section{
 .swiper-section{
     .swiper {
         margin-bottom: 12px;
-        width: 1000px;
         height: 300px;
         .swiper-slide {
             width: 100%;
@@ -93,3 +99,23 @@ section{
         }
     }
 }
+
+.footer-section{
+    background: #4F5665;
+    .footer-part{
+        .subscribe-part{
+            background: #fff;
+            h1{
+                max-width: 434px;
+            }
+        }
+        .footer-information-part{
+
+        }
+    }
+    
+}
+.subscribe-part{
+    transform: translateY(-300px);
+}
+

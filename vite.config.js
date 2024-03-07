@@ -9,16 +9,12 @@ export default defineConfig({
     hot: true,
   },
   build: {
-    outDir: "../../wwwroot/templates/template-1/",
+    outDir: "../dist",
     rollupOptions: {
       input: {
         index: path.resolve(__dirname, "src/index.html"),
       },
-      output: {
-        assetFileNames: "wwwroot/[ext]/[name][extname]",
-        chunkFileNames: "wwwroot/chunks/[name].js",
-        entryFileNames: "wwwroot/chunks/[name].js",
-      },
+     
     },
   },
  
