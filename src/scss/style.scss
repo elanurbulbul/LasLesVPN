@@ -83,7 +83,8 @@ section{
 
 .swiper-section{
     .swiper {
-        margin-bottom: 12px;
+        width: 100%;
+        margin-bottom: 50px;
         height: 300px;
         .swiper-slide {
             width: 100%;
@@ -100,22 +101,17 @@ section{
     }
 }
 
-.footer-section{
-    background: #4F5665;
-    .footer-part{
+.footer-subcribe-top-on{
+    background: #d1bfbf;
+    .subscribe-section{
         .subscribe-part{
-            background: #fff;
+            transform: translateY(-100px);
+            background: white;
             h1{
                 max-width: 434px;
             }
         }
-        .footer-information-part{
-
-        }
     }
-    
 }
-.subscribe-part{
-    transform: translateY(-300px);
-}
+
 
