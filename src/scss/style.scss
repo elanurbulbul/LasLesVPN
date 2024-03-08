@@ -104,10 +104,8 @@ section {
 }
 
 .footer-subscribe-top-on {
-  margin: 0;
   background: rgb(222, 209, 209);
   .subscribe-section {
-    margin: 0;
     .subscribe-part {
       transform: translateY(-100px);
       background: white;
@@ -117,6 +115,8 @@ section {
     }
   }
   .site-footer {
+
+    margin-bottom: 0;
     font-size: 15px;
     line-height: 24px;
     .text-justify {
@@ -129,9 +129,9 @@ section {
       margin-top: 5px;
       letter-spacing: 2px;
     }
-    .footer-links{
+    .footer-links {
       padding-left: 0;
-      list-style:none;
+      list-style: none;
       li {
         display: block;
         a {
@@ -146,12 +146,6 @@ section {
   }
 
   
-
-  @media (max-width: 991px) {
-    .site-footer [class^="col-"] {
-      margin-bottom: 30px;
-    }
-  }
   @media (max-width: 767px) {
     .site-footer {
       padding-bottom: 0;
