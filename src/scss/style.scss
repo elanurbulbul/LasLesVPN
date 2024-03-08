@@ -2,12 +2,13 @@
 
 // Customize some defaults
 
-$font-family-sans-serif: 'Satoshi-Variable', 'Satoshi-VariableItalic', sans-serif;
+$font-family-sans-serif: "Satoshi-Variable", "Satoshi-VariableItalic",
+  sans-serif;
 $body-color: #212121;
 $body-bg: #fff;
-$border-radius: .4rem;
+$border-radius: 0.4rem;
 $success: #28a745;
-$primary: #4F5665;
+$primary: #4f5665;
 $shadow-sm: 0px 0 1px rgba(0, 0, 0, 0.05);
 
 $container-max-widths: (
@@ -22,7 +23,7 @@ $zindex-levels: (
   0: 0,
   1: 1,
   2: 2,
-  3: 3
+  3: 3,
 ) !default;
 
 // Import all of Bootstrap's CSS
@@ -40,78 +41,124 @@ $zindex-levels: (
 // Utilities
 @import "../../node_modules/bootstrap/scss/utilities/api";
 
-section{
-    margin: 90px 0;
+section {
+  margin: 90px 0;
 }
-.rubik{
-    font-family: "Rubik", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
+
+.rubik {
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
-.btn{
+.btn {
   padding: 12px 60px;
   border-radius: 10px;
 }
-.hero-bg-section{
-    h1{
-        max-width:480px;
-        font-weight: 500;
-    }
+.hero-bg-section {
+  h1 {
+    max-width: 480px;
+    font-weight: 500;
+  }
 }
-.third-bg-section{
-    li{
-        display: flex;
-        align-items: center;
-    }
-    h4{
-        max-width: 291px;
-    }
-    p{
-        max-width: 430px;
-    }
+.third-bg-section {
+  li {
+    display: flex;
+    align-items: center;
+  }
+  h4 {
+    max-width: 291px;
+  }
+  p {
+    max-width: 430px;
+  }
 }
-.cards-bg-section{
-    ul{
-        font-size: 14px;
-    }
-   
-    .pricing-card{
-        padding: 50px 72px;
-        width: 100%;
-    }
+.cards-bg-section {
+  ul {
+    font-size: 14px;
+  }
+
+  .pricing-card {
+    padding: 50px 72px;
+    width: 100%;
+  }
 }
 
-.swiper-section{
-    .swiper {
-        width: 100%;
-        margin-bottom: 50px;
-        height: 300px;
-        .swiper-slide {
-            width: 100%;
-            text-align: start;
-            font-size: 14px;
-            background: #fff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            .user-information{
-                font-size: 10px;
-            }
+.swiper-section {
+  .swiper {
+    width: 100%;
+    margin-bottom: 50px;
+    height: 300px;
+    .swiper-slide {
+      width: 100%;
+      text-align: start;
+      font-size: 14px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .user-information {
+        font-size: 10px;
+      }
+    }
+  }
+}
+
+.footer-subscribe-top-on {
+  margin: 0;
+  background: rgb(222, 209, 209);
+  .subscribe-section {
+    margin: 0;
+    .subscribe-part {
+      transform: translateY(-100px);
+      background: white;
+      h1 {
+        max-width: 434px;
+      }
+    }
+  }
+  .site-footer {
+    font-size: 15px;
+    line-height: 24px;
+    .text-justify {
+      max-width: 285px;
+    }
+    h6 {
+      color: #130707;
+      font-size: 16px;
+      text-transform: uppercase;
+      margin-top: 5px;
+      letter-spacing: 2px;
+    }
+    .footer-links{
+      padding-left: 0;
+      list-style:none;
+      li {
+        display: block;
+        a {
+          text-decoration: none;
+          a:hover {
+            color: #cc4733;
+            text-decoration: none;
+          }
         }
+      }
     }
-}
+  }
 
-.footer-subcribe-top-on{
-    background: #d1bfbf;
-    .subscribe-section{
-        .subscribe-part{
-            transform: translateY(-100px);
-            background: white;
-            h1{
-                max-width: 434px;
-            }
-        }
+  
+
+  @media (max-width: 991px) {
+    .site-footer [class^="col-"] {
+      margin-bottom: 30px;
     }
+  }
+  @media (max-width: 767px) {
+    .site-footer {
+      padding-bottom: 0;
+    }
+    .site-footer .copyright-text,
+    .site-footer .social-icons {
+      text-align: center;
+    }
+  }
 }
-
-
