@@ -101,6 +101,30 @@ section {
       }
     }
   }
+  @media  (max-width:1000px) {
+    .swiper{
+      height:500px;
+    }
+    .card-title{ 
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
+  }
+  @media (max-width:575px) {
+    .user{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      text-align: center;
+      
+    }
+    
+  }
 }
 
 .footer-subscribe-top-on {
@@ -156,3 +180,4 @@ section {
     }
   }
 }
+
